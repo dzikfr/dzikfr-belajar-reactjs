@@ -8,4 +8,9 @@ const FunctionalComponent = (props) =>{ //({nama})
     )
 }
 
+//default props
+FunctionalComponent.defaultProps = {
+    nama : "Guest"
+}
+
 export default FunctionalComponent;
