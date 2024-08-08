@@ -6,6 +6,7 @@ class ClassComponent extends React.Component{
             <div>
                 <h1>Hello World</h1>
                 <h3>Hallo {this.props.nama}</h3>
+                <p>sedangkan dibawah ini menggunakan state</p>
                 <button onClick={this.handleMin}>-</button>
                 <span>{'  '}{this.state.value}{'  '}</span>
                 <button onClick={this.handlePlus}>+</button>
