@@ -4,6 +4,7 @@ import Sass from "./Sass";
 import Inline from "./inline";
 import Module from "./module";
 import Styled from "./styled";
+import Bootstrap from "./bootstrap";
 
 const Styling = () => {
     return(
@@ -13,6 +14,7 @@ const Styling = () => {
             <Inline/>
             <Module/>
             <Styled/>
+            <Bootstrap/>
         </div>
     )
 }
