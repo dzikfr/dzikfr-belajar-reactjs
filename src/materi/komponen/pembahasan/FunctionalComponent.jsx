@@ -1,6 +1,14 @@
+import React from 'react';
+
 const FunctionalComponent = ({nama ='guest', asal='place'}) =>{ //({nama})
     
     const fullNames = ['dzikri','fauzi','ramdhani'];
+    const [likes, setLikes] = React.useState(0);
+
+    function handleClick(){
+        setLikes(likes < 10? likes+1 : likes);
+    }
+
     return(
         <div>
             <h1>hallo {nama}</h1>
@@ -13,6 +21,7 @@ const FunctionalComponent = ({nama ='guest', asal='place'}) =>{ //({nama})
                     ))
                 }
             </ul>
+            <button onClick ={handleClick}>Likes maks10 ({likes})</button>
         </div>
     )
 }

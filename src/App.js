@@ -1,4 +1,5 @@
 import Komponen from "./materi/komponen";
+import Rendering from "./materi/rendering";
 import Styling from "./materi/styling";
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
     <div className="App">
       <Komponen/>
       <Styling/>
+      <Rendering/>
     </div>
   );
 }
