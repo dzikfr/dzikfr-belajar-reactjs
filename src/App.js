@@ -1,5 +1,5 @@
 import LifecycleComponent from "./tugas/lifecycle/Lifecycle";
-import Lifecycle from "./tugas";
+//import Lifecycle from "./tugas";
 
 function App() {
   return (
