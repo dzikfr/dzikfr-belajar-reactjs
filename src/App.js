@@ -1,13 +1,11 @@
-import Form from "./materi/form";
-import Komponen from "./materi/komponen";
-import Rendering from "./materi/rendering";
-import Styling from "./materi/styling";
-import FormRegistration from "./tugas/FormRegistration";
+import LifecycleComponent from "./tugas/lifecycle/Lifecycle";
+import Lifecycle from "./tugas";
 
 function App() {
   return (
     <div className="App">
-      <FormRegistration/>
+      <LifecycleComponent/>
+      {/*<Lifecycle/>*/}
     </div>
   );
 }
