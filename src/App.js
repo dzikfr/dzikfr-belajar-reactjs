@@ -1,4 +1,4 @@
-import LifecycleComponent from "./tugas/lifecycle/Lifecycle";
+import LifecycleComponent from "./tugas/lifecycle/lifecycleComponents";
 //import Lifecycle from "./tugas";
 
 function App() {

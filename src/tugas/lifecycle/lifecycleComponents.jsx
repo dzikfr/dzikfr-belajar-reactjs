@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import style from '../lifecycle-style.css';
 
 class LifecycleComponent extends Component {
   state = {
     allArticles: [],
     filteredArticles: [],
-    searchTerm: '',
+    searchInput: '',
   };
 
   componentDidMount() {
@@ -14,7 +15,7 @@ class LifecycleComponent extends Component {
   }
 
   getData = () => {
-    const urlData = 'https://newsapi.org/v2/everything?q=tesla&from=2024-07-12&sortBy=publishedAt&apiKey=542d8b36e56f4044a035d48626c5c242';
+    const urlData = 'https://newsapi.org/v2/everything?q=tesla&from=2024-07-13&sortBy=publishedAt&apiKey=542d8b36e56f4044a035d48626c5c242';
     fetch(urlData)
       .then(response => response.json())
       .then(data => {
@@ -60,11 +61,11 @@ class LifecycleComponent extends Component {
   };
 
   handleSearch = (e) => {
-    const searchTerm = e.target.value.toLowerCase();
+    const searchInput = e.target.value.toLowerCase();
     const filteredArticles = this.state.allArticles.filter(article =>
-      article.title.toLowerCase().includes(searchTerm)
+      article.title.toLowerCase().includes(searchInput)
     );
-    this.setState({ filteredArticles, searchTerm });
+    this.setState({ filteredArticles, searchInput });
   };
 
   scrollUpButton = () => {
@@ -95,7 +96,7 @@ class LifecycleComponent extends Component {
                 placeholder="Cari berita..."
                 id="search-bar"
                 aria-label="Search"
-                value={this.state.searchTerm}
+                value={this.state.searchInput}
                 onChange={this.handleSearch}
               />
             </div>
