@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import Navbar from './lifecycle/navbar';
-import Main from './lifecycle/main';
-import ScrollUpButton from './lifecycle/scrollUpButton';
+import Navbar from './hook/navbar';
+import Main from './hook/main';
+import ScrollUpButton from './hook/scrollUpButton';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import style from './lifecycle-style.css'
 
