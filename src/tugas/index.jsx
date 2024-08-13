@@ -5,7 +5,7 @@ import ScrollUpButton from './hook/scrollUpButton';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import style from './lifecycle-style.css'
 
-const PortalBerita = () => {
+const NewsPortal = () => {
     const [allArticles, setAllArticles] = useState([]);
     const [filteredArticles, setFilteredArticles] = useState([]);
 
@@ -46,4 +46,4 @@ const PortalBerita = () => {
     );
 };
 
-export default PortalBerita;
+export default NewsPortal;
