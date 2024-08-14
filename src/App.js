@@ -1,9 +1,10 @@
-import LifecycleComponent from "./tugas/lifecycle/lifecycleComponents";
+import HookApp from "./tugas/hookApp";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
     <div className="App">
-      <LifecycleComponent/>
+      <HookApp/>
     </div>
   );
 }
