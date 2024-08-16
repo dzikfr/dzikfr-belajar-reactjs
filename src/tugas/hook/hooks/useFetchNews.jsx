@@ -11,8 +11,10 @@ const useFetchNews = (url) => {
                 const data = await response.json();
                 if (data.status === 'ok') {
                     setArticles(data.articles);
+                    alert('data berhasil diambil');
                 } else {
                     setError('Terjadi kesalahan saat mengambil data');
+                    console.log('error :', error);
                 }
             } catch (err) {
                 setError('Pastikan terkoneksi dengan internet');

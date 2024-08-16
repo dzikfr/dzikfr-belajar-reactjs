@@ -1,12 +1,10 @@
-import HookApp from "./tugas/hookApp";
-import 'bootstrap/dist/css/bootstrap.min.css';
+import React from 'react';
+import RouterApp from './tugas/router/routerApp';
 
-function App() {
-  return (
-    <div className="App">
-      <HookApp/>
-    </div>
-  );
-}
+const App = () => {
+    return (
+        <RouterApp/>
+    );
+};
 
 export default App;

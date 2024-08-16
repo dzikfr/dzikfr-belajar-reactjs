@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import Navbar from './hook/components/navbar';
-import NewsList from './hook/components/newsList';
-import ScrollUpButton from './hook/components/scrollUpButton';
-import useFetchNews from './hook/hooks/useFetchNews';
+import Navbar from './components/navbar';
+import NewsList from './components/newsList';
+import ScrollUpButton from './components/scrollUpButton';
+import useFetchNews from './hooks/useFetchNews';
 import style from './newsStyle.css';
 
 const HookApp = () => {
