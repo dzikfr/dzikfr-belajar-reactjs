@@ -1,25 +1,17 @@
 import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter, Route, Routes, Link } from 'react-router-dom';
-import About from './components/about';
-import Skills from './components/skills';
-import Portofolio from './components/portofolio';
+import Navbar from './components/navbar';
+import Home from './components/home';
+import './index.css';
+
 
 const RouterApp = () => {
     return (
        <BrowserRouter>
             <div>
-                <h1>Belajar menggunakan React Router DOM</h1>
-                <nav>
-                    <Link to="/about"><button>About</button></Link>
-                    <Link to="/skills"><button>Skills</button></Link>
-                    <Link to="/portfolio"><button>Portfolio</button></Link>
-                </nav>
-
-                <Routes>
-                    <Route path="/about" element={<About/>} />
-                    <Route path="/skills" element={<Skills/>} />
-                    <Route path="/portfolio" element={<Portofolio/>} />
-                </Routes>
+                <Navbar/>
+                <Home/>
             </div>
        </BrowserRouter>
     );
