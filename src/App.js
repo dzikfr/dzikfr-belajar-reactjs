@@ -1,8 +1,9 @@
-import Redux from './materi/redux';
+import React from 'react';
+import RouterApp from './tugas/router/routerApp';
 
 const App = () => {
     return (
-        <Redux/>
+        <RouterApp/>
     );
 };
 
